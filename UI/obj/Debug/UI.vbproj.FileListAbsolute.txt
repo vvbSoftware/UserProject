@@ -13,3 +13,17 @@ C:\Users\GaaraXz\source\repos\Proyecto\UI\obj\Debug\UI.pdb
 C:\Users\GaaraXz\source\repos\Proyecto\UI\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\GaaraXz\source\repos\Proyecto\UI\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\GaaraXz\source\repos\Proyecto\UI\obj\Debug\UI.vbproj.CopyComplete
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\bin\Debug\UI.exe.config
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\bin\Debug\UI.exe
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\bin\Debug\UI.pdb
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\bin\Debug\UI.xml
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.vbprojAssemblyReference.cache
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.LogIn.resources
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.Resources.resources
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.vbproj.GenerateResource.cache
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.vbproj.CoreCompileInputs.cache
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.vbproj.CopyComplete
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.exe
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.xml
+C:\Users\Beron\Source\Repos\PROYECTOuser\UI\obj\Debug\UI.pdb
