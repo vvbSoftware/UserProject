@@ -1,0 +1,10 @@
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\bin\Debug\Logic.dll
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\bin\Debug\Logic.pdb
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\bin\Debug\Logic.xml
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\obj\Debug\Logic.vbprojAssemblyReference.cache
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\obj\Debug\Logic.Resources.resources
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\obj\Debug\Logic.vbproj.GenerateResource.cache
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\obj\Debug\Logic.vbproj.CoreCompileInputs.cache
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\obj\Debug\Logic.dll
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\obj\Debug\Logic.xml
+C:\Users\GaaraXz\source\repos\Proyecto\Logic\obj\Debug\Logic.pdb
