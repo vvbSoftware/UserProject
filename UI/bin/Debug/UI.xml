@@ -22,6 +22,16 @@ UI
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:UI.My.Resources.Resources.bitmap">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.bitmap1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:UI.My.Resources.Resources.Close_Icon">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

@@ -33,22 +33,24 @@ Partial Class LogIn
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.llbForgotPass = New System.Windows.Forms.LinkLabel()
+        Me.btnChangeLanguage = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.topPanel.SuspendLayout()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnChangeLanguage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 25)
+        Me.Label1.Size = New System.Drawing.Size(72, 22)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "LOGIN"
         '
@@ -93,13 +95,14 @@ Partial Class LogIn
         '
         Me.txtUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUser.CausesValidation = False
+        Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUser.ForeColor = System.Drawing.Color.Silver
-        Me.txtUser.Location = New System.Drawing.Point(41, 210)
+        Me.txtUser.Location = New System.Drawing.Point(39, 239)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(350, 19)
-        Me.txtUser.TabIndex = 2
+        Me.txtUser.Size = New System.Drawing.Size(350, 20)
+        Me.txtUser.TabIndex = 1
         Me.txtUser.Text = "USER"
         '
         'ShapeContainer1
@@ -118,8 +121,8 @@ Partial Class LogIn
         Me.LineShape3.Name = "LineShape3"
         Me.LineShape3.X1 = 41
         Me.LineShape3.X2 = 390
-        Me.LineShape3.Y1 = 538
-        Me.LineShape3.Y2 = 538
+        Me.LineShape3.Y1 = 561
+        Me.LineShape3.Y2 = 561
         '
         'LineShape2
         '
@@ -128,8 +131,8 @@ Partial Class LogIn
         Me.LineShape2.Name = "LineShape2"
         Me.LineShape2.X1 = 39
         Me.LineShape2.X2 = 390
-        Me.LineShape2.Y1 = 300
-        Me.LineShape2.Y2 = 300
+        Me.LineShape2.Y1 = 331
+        Me.LineShape2.Y2 = 331
         '
         'LineShape1
         '
@@ -138,20 +141,20 @@ Partial Class LogIn
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 39
         Me.LineShape1.X2 = 390
-        Me.LineShape1.Y1 = 230
-        Me.LineShape1.Y2 = 230
+        Me.LineShape1.Y1 = 261
+        Me.LineShape1.Y2 = 261
         '
         'txtPass
         '
         Me.txtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPass.ForeColor = System.Drawing.Color.Silver
-        Me.txtPass.Location = New System.Drawing.Point(39, 280)
+        Me.txtPass.Location = New System.Drawing.Point(40, 309)
         Me.txtPass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(350, 19)
-        Me.txtPass.TabIndex = 4
+        Me.txtPass.Size = New System.Drawing.Size(350, 20)
+        Me.txtPass.TabIndex = 2
         Me.txtPass.Text = "PASSWORD"
         '
         'btnLogin
@@ -161,12 +164,45 @@ Partial Class LogIn
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Location = New System.Drawing.Point(39, 373)
+        Me.btnLogin.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Location = New System.Drawing.Point(39, 420)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(352, 50)
-        Me.btnLogin.TabIndex = 5
+        Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "LOG IN"
         Me.btnLogin.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 590)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(430, 10)
+        Me.Panel1.TabIndex = 7
+        '
+        'llbForgotPass
+        '
+        Me.llbForgotPass.AutoSize = True
+        Me.llbForgotPass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llbForgotPass.LinkColor = System.Drawing.Color.Silver
+        Me.llbForgotPass.Location = New System.Drawing.Point(130, 566)
+        Me.llbForgotPass.Name = "llbForgotPass"
+        Me.llbForgotPass.Size = New System.Drawing.Size(148, 21)
+        Me.llbForgotPass.TabIndex = 0
+        Me.llbForgotPass.TabStop = True
+        Me.llbForgotPass.Text = "Forgot password?"
+        '
+        'btnChangeLanguage
+        '
+        Me.btnChangeLanguage.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnChangeLanguage.Image = Global.UI.My.Resources.Resources.bitmap1
+        Me.btnChangeLanguage.Location = New System.Drawing.Point(3, 29)
+        Me.btnChangeLanguage.Name = "btnChangeLanguage"
+        Me.btnChangeLanguage.Size = New System.Drawing.Size(41, 21)
+        Me.btnChangeLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnChangeLanguage.TabIndex = 8
+        Me.btnChangeLanguage.TabStop = False
         '
         'PictureBox1
         '
@@ -178,31 +214,14 @@ Partial Class LogIn
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 590)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(430, 10)
-        Me.Panel1.TabIndex = 7
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(154, 548)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 13)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "forgot your password?"
-        '
         'LogIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(430, 600)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnChangeLanguage)
+        Me.Controls.Add(Me.llbForgotPass)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnLogin)
@@ -221,6 +240,7 @@ Partial Class LogIn
         Me.topPanel.PerformLayout()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnChangeLanguage, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -240,5 +260,6 @@ Partial Class LogIn
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LineShape3 As PowerPacks.LineShape
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label2 As Label
+    Friend WithEvents llbForgotPass As LinkLabel
+    Friend WithEvents btnChangeLanguage As PictureBox
 End Class
