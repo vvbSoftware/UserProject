@@ -1,8 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
-Public Class LogIn
+Public Class FrmLogIn
     Private _languageState As String
     Private Sub LogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Application.Exit()
@@ -12,25 +11,29 @@ Public Class LogIn
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        '...
+        Me.Visible = False
+        Dim form As New FrmPrincipal
+        form.ShowDialog()
     End Sub
     Private Sub btnChangeLanguage_Click(sender As Object, e As EventArgs) Handles btnChangeLanguage.Click
-        If txtUser.Text = "USER" Then
-            txtUser.Text = "USUARIO"
-            txtPass.Text = "CONTRASEÑA"
+        If txtUser.Text = "ID" Then
+            txtUser.Text = "CEDULA"
+            lbCedula.Text = "CEDULA"
             btnLogin.Text = "INICIAR"
             llbForgotPass.Text = "Olvidado su contraseña?"
+            lbAclaracion.Visible = True
             _languageState = "español"
-        ElseIf txtUser.Text = "USUARIO" Then
-            txtUser.Text = "USER"
-            txtPass.Text = "PASSWORD"
+        ElseIf txtUser.Text = "CEDULA" Then
+            txtUser.Text = "ID"
+            lbCedula.Text = "ID"
             btnLogin.Text = "LOGIN"
             llbForgotPass.Text = "Forgot password?"
+            lbAclaracion.Visible = False
             _languageState = "ingles"
         End If
     End Sub
 #Region "Estilisado"
-    Private Sub Button1_Paint(sender As Object, e As PaintEventArgs) Handles btnLogin.Paint
+    Public Sub Button1_Paint(sender As Object, e As PaintEventArgs) Handles btnLogin.Paint
         Dim buttonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
         Dim myRectangle As Rectangle = btnLogin.ClientRectangle
         myRectangle.Inflate(0, 30)
@@ -40,7 +43,8 @@ Public Class LogIn
 #Region "funcionamiento text area"
     Private Sub txtUser_Enter(sender As Object, e As EventArgs) Handles txtUser.Enter
         With txtUser
-            If .Text = "USER" Or .Text = "USUARIO" Then
+            If .Text = "ID" Or .Text = "CEDULA" Then
+                lbCedula.Visible = True
                 .Text = ""
                 .ForeColor = Color.FromArgb(240, 240, 240)
             End If
@@ -52,41 +56,25 @@ Public Class LogIn
         With txtUser
             If .Text = "" Then
                 If _languageState = "ingles" Then
-                    .Text = "USER"
-                Else
-                    .Text = "USUARIO"
-                End If
-                .ForeColor = Color.Silver
-            End If
-        End With
-    End Sub
+                    .Text = "ID"
+                    lbCedula.Visible = False
 
-    Private Sub txtPass_Enter(sender As Object, e As EventArgs) Handles txtPass.Enter
-        With txtPass
-            If .Text = "PASSWORD" Or .Text = "CONTRASEÑA" Then
-                .Text = ""
-                .UseSystemPasswordChar = True 'coloco los caracteres de contraseña
-                .ForeColor = Color.FromArgb(240, 240, 240)
-            End If
-        End With
-    End Sub
-
-    Private Sub txtPass_Leave(sender As Object, e As EventArgs) Handles txtPass.Leave
-        'si el campo esta vacio lo relleno
-        With txtPass
-            If .Text = "" Then
-                If _languageState = "ingles" Then
-                    .Text = "PASSWORD"
                 Else
-                    .Text = "CONTRASEÑA"
+                    .Text = "CEDULA"
+                    lbCedula.Visible = False
+
                 End If
-                .UseSystemPasswordChar = False 'quito los caracteres de contraseña para poder ver el texto
                 .ForeColor = Color.Silver
             End If
         End With
     End Sub
 #End Region 'region estilos text area
 #Region "poder mover el form"
+    'DLLImport,Significa que el método declarado a 
+    'continuación no está en .NET, sino en un archivo DLL externo (nativo). 
+    'En este caso, se encuentra en el archivo User32.dll, que es un componente 
+    'estándar de Windows. El cual nos permite utilizar los eventos/método del sistema 
+    'operativo, en este caso capturar las señales del mouse.
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
@@ -97,11 +85,7 @@ Public Class LogIn
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-    'DLLImport,Significa que el método declarado a 
-    'continuación no está en .NET, sino en un archivo DLL externo (nativo). 
-    'En este caso, se encuentra en el archivo User32.dll, que es un componente 
-    'estándar de Windows. El cual nos permite utilizar los eventos/método del sistema 
-    'operativo, en este caso capturar las señales del mouse.
+
 
 #End Region 'region de mover form
 #End Region 'region de estilos

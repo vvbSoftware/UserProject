@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class LogIn
+Partial Class FrmLogIn
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -29,14 +29,14 @@ Partial Class LogIn
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.llbForgotPass = New System.Windows.Forms.LinkLabel()
         Me.btnChangeLanguage = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lbAclaracion = New System.Windows.Forms.Label()
+        Me.lbCedula = New System.Windows.Forms.Label()
         Me.topPanel.SuspendLayout()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,19 +98,19 @@ Partial Class LogIn
         Me.txtUser.CausesValidation = False
         Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUser.ForeColor = System.Drawing.Color.Silver
-        Me.txtUser.Location = New System.Drawing.Point(39, 239)
+        Me.txtUser.Location = New System.Drawing.Point(39, 284)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(350, 20)
         Me.txtUser.TabIndex = 1
-        Me.txtUser.Text = "USER"
+        Me.txtUser.Text = "CEDULA"
         '
         'ShapeContainer1
         '
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape3, Me.LineShape2, Me.LineShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape3, Me.LineShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(430, 600)
         Me.ShapeContainer1.TabIndex = 3
         Me.ShapeContainer1.TabStop = False
@@ -124,16 +124,6 @@ Partial Class LogIn
         Me.LineShape3.Y1 = 561
         Me.LineShape3.Y2 = 561
         '
-        'LineShape2
-        '
-        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape2.Enabled = False
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 39
-        Me.LineShape2.X2 = 390
-        Me.LineShape2.Y1 = 331
-        Me.LineShape2.Y2 = 331
-        '
         'LineShape1
         '
         Me.LineShape1.BorderColor = System.Drawing.Color.Silver
@@ -141,21 +131,8 @@ Partial Class LogIn
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 39
         Me.LineShape1.X2 = 390
-        Me.LineShape1.Y1 = 261
-        Me.LineShape1.Y2 = 261
-        '
-        'txtPass
-        '
-        Me.txtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.ForeColor = System.Drawing.Color.Silver
-        Me.txtPass.Location = New System.Drawing.Point(40, 309)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(350, 20)
-        Me.txtPass.TabIndex = 2
-        Me.txtPass.Text = "PASSWORD"
+        Me.LineShape1.Y1 = 307
+        Me.LineShape1.Y2 = 307
         '
         'btnLogin
         '
@@ -169,7 +146,7 @@ Partial Class LogIn
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(352, 50)
         Me.btnLogin.TabIndex = 3
-        Me.btnLogin.Text = "LOG IN"
+        Me.btnLogin.Text = "INICIAR"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
         'Panel1
@@ -186,12 +163,12 @@ Partial Class LogIn
         Me.llbForgotPass.AutoSize = True
         Me.llbForgotPass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llbForgotPass.LinkColor = System.Drawing.Color.Silver
-        Me.llbForgotPass.Location = New System.Drawing.Point(130, 566)
+        Me.llbForgotPass.Location = New System.Drawing.Point(119, 566)
         Me.llbForgotPass.Name = "llbForgotPass"
-        Me.llbForgotPass.Size = New System.Drawing.Size(148, 21)
+        Me.llbForgotPass.Size = New System.Drawing.Size(206, 21)
         Me.llbForgotPass.TabIndex = 0
         Me.llbForgotPass.TabStop = True
-        Me.llbForgotPass.Text = "Forgot password?"
+        Me.llbForgotPass.Text = "Olvidado su contraseña?"
         '
         'btnChangeLanguage
         '
@@ -214,25 +191,47 @@ Partial Class LogIn
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'LogIn
+        'lbAclaracion
+        '
+        Me.lbAclaracion.AutoSize = True
+        Me.lbAclaracion.Location = New System.Drawing.Point(38, 318)
+        Me.lbAclaracion.Name = "lbAclaracion"
+        Me.lbAclaracion.Size = New System.Drawing.Size(193, 13)
+        Me.lbAclaracion.TabIndex = 9
+        Me.lbAclaracion.Text = "Ingrese su cedula sin puntos ni guiones"
+        '
+        'lbCedula
+        '
+        Me.lbCedula.AutoSize = True
+        Me.lbCedula.Enabled = False
+        Me.lbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCedula.Location = New System.Drawing.Point(35, 262)
+        Me.lbCedula.Name = "lbCedula"
+        Me.lbCedula.Size = New System.Drawing.Size(59, 20)
+        Me.lbCedula.TabIndex = 10
+        Me.lbCedula.Text = "Cedula"
+        Me.lbCedula.Visible = False
+        '
+        'FrmLogIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(430, 600)
+        Me.Controls.Add(Me.lbCedula)
+        Me.Controls.Add(Me.lbAclaracion)
         Me.Controls.Add(Me.btnChangeLanguage)
         Me.Controls.Add(Me.llbForgotPass)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnLogin)
-        Me.Controls.Add(Me.txtPass)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.topPanel)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.ForeColor = System.Drawing.Color.Silver
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "LogIn"
+        Me.Name = "FrmLogIn"
         Me.Opacity = 0.9R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -254,12 +253,12 @@ Partial Class LogIn
     Friend WithEvents txtUser As TextBox
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents LineShape1 As PowerPacks.LineShape
-    Friend WithEvents txtPass As TextBox
-    Friend WithEvents LineShape2 As PowerPacks.LineShape
     Friend WithEvents btnLogin As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LineShape3 As PowerPacks.LineShape
     Friend WithEvents Panel1 As Panel
     Friend WithEvents llbForgotPass As LinkLabel
     Friend WithEvents btnChangeLanguage As PictureBox
+    Friend WithEvents lbAclaracion As Label
+    Friend WithEvents lbCedula As Label
 End Class
