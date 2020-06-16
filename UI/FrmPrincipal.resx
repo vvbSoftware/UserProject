@@ -117,16 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>1. Selecciones al menos
-     x sintomas
-2. Pulse el Boton de CONSULTAR
-
-
-Al leer su diagnostico primaria 
-podra pulsar el boton chat para
-hablar con un medico o puede 
-pulsar el boton de Cerrar en 
-la parte inferior</value>
-  </data>
 </root>

@@ -29,14 +29,17 @@ Partial Class FrmLogIn
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.llbForgotPass = New System.Windows.Forms.LinkLabel()
+        Me.llbForgotPassEs = New System.Windows.Forms.LinkLabel()
         Me.btnChangeLanguage = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lbAclaracion = New System.Windows.Forms.Label()
-        Me.lbCedula = New System.Windows.Forms.Label()
+        Me.llbCrearUsuarioEs = New System.Windows.Forms.LinkLabel()
+        Me.llbForgotPassIn = New System.Windows.Forms.LinkLabel()
+        Me.llbCrearUsuarioIn = New System.Windows.Forms.LinkLabel()
         Me.topPanel.SuspendLayout()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,19 +101,19 @@ Partial Class FrmLogIn
         Me.txtUser.CausesValidation = False
         Me.txtUser.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUser.ForeColor = System.Drawing.Color.Silver
-        Me.txtUser.Location = New System.Drawing.Point(39, 284)
+        Me.txtUser.Location = New System.Drawing.Point(39, 239)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(350, 20)
         Me.txtUser.TabIndex = 1
-        Me.txtUser.Text = "CEDULA"
+        Me.txtUser.Text = "USUARIO"
         '
         'ShapeContainer1
         '
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape3, Me.LineShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape3, Me.LineShape2, Me.LineShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(430, 600)
         Me.ShapeContainer1.TabIndex = 3
         Me.ShapeContainer1.TabStop = False
@@ -121,8 +124,18 @@ Partial Class FrmLogIn
         Me.LineShape3.Name = "LineShape3"
         Me.LineShape3.X1 = 41
         Me.LineShape3.X2 = 390
-        Me.LineShape3.Y1 = 561
-        Me.LineShape3.Y2 = 561
+        Me.LineShape3.Y1 = 534
+        Me.LineShape3.Y2 = 534
+        '
+        'LineShape2
+        '
+        Me.LineShape2.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape2.Enabled = False
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 39
+        Me.LineShape2.X2 = 390
+        Me.LineShape2.Y1 = 331
+        Me.LineShape2.Y2 = 331
         '
         'LineShape1
         '
@@ -131,8 +144,21 @@ Partial Class FrmLogIn
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 39
         Me.LineShape1.X2 = 390
-        Me.LineShape1.Y1 = 307
-        Me.LineShape1.Y2 = 307
+        Me.LineShape1.Y1 = 261
+        Me.LineShape1.Y2 = 261
+        '
+        'txtPass
+        '
+        Me.txtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.ForeColor = System.Drawing.Color.Silver
+        Me.txtPass.Location = New System.Drawing.Point(40, 309)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(350, 20)
+        Me.txtPass.TabIndex = 2
+        Me.txtPass.Text = "CONTRASEÑA"
         '
         'btnLogin
         '
@@ -158,17 +184,17 @@ Partial Class FrmLogIn
         Me.Panel1.Size = New System.Drawing.Size(430, 10)
         Me.Panel1.TabIndex = 7
         '
-        'llbForgotPass
+        'llbForgotPassEs
         '
-        Me.llbForgotPass.AutoSize = True
-        Me.llbForgotPass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.llbForgotPass.LinkColor = System.Drawing.Color.Silver
-        Me.llbForgotPass.Location = New System.Drawing.Point(119, 566)
-        Me.llbForgotPass.Name = "llbForgotPass"
-        Me.llbForgotPass.Size = New System.Drawing.Size(206, 21)
-        Me.llbForgotPass.TabIndex = 0
-        Me.llbForgotPass.TabStop = True
-        Me.llbForgotPass.Text = "Olvidado su contraseña?"
+        Me.llbForgotPassEs.AutoSize = True
+        Me.llbForgotPassEs.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llbForgotPassEs.LinkColor = System.Drawing.Color.Silver
+        Me.llbForgotPassEs.Location = New System.Drawing.Point(110, 541)
+        Me.llbForgotPassEs.Name = "llbForgotPassEs"
+        Me.llbForgotPassEs.Size = New System.Drawing.Size(206, 21)
+        Me.llbForgotPassEs.TabIndex = 0
+        Me.llbForgotPassEs.TabStop = True
+        Me.llbForgotPassEs.Text = "Olvidado su contraseña?"
         '
         'btnChangeLanguage
         '
@@ -191,26 +217,43 @@ Partial Class FrmLogIn
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'lbAclaracion
+        'llbCrearUsuarioEs
         '
-        Me.lbAclaracion.AutoSize = True
-        Me.lbAclaracion.Location = New System.Drawing.Point(38, 318)
-        Me.lbAclaracion.Name = "lbAclaracion"
-        Me.lbAclaracion.Size = New System.Drawing.Size(193, 13)
-        Me.lbAclaracion.TabIndex = 9
-        Me.lbAclaracion.Text = "Ingrese su cedula sin puntos ni guiones"
+        Me.llbCrearUsuarioEs.AutoSize = True
+        Me.llbCrearUsuarioEs.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llbCrearUsuarioEs.LinkColor = System.Drawing.Color.Silver
+        Me.llbCrearUsuarioEs.Location = New System.Drawing.Point(152, 566)
+        Me.llbCrearUsuarioEs.Name = "llbCrearUsuarioEs"
+        Me.llbCrearUsuarioEs.Size = New System.Drawing.Size(113, 21)
+        Me.llbCrearUsuarioEs.TabIndex = 0
+        Me.llbCrearUsuarioEs.TabStop = True
+        Me.llbCrearUsuarioEs.Text = "Crear usuario"
         '
-        'lbCedula
+        'llbForgotPassIn
         '
-        Me.lbCedula.AutoSize = True
-        Me.lbCedula.Enabled = False
-        Me.lbCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbCedula.Location = New System.Drawing.Point(35, 262)
-        Me.lbCedula.Name = "lbCedula"
-        Me.lbCedula.Size = New System.Drawing.Size(59, 20)
-        Me.lbCedula.TabIndex = 10
-        Me.lbCedula.Text = "Cedula"
-        Me.lbCedula.Visible = False
+        Me.llbForgotPassIn.AutoSize = True
+        Me.llbForgotPassIn.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llbForgotPassIn.LinkColor = System.Drawing.Color.Silver
+        Me.llbForgotPassIn.Location = New System.Drawing.Point(121, 541)
+        Me.llbForgotPassIn.Name = "llbForgotPassIn"
+        Me.llbForgotPassIn.Size = New System.Drawing.Size(185, 21)
+        Me.llbForgotPassIn.TabIndex = 0
+        Me.llbForgotPassIn.TabStop = True
+        Me.llbForgotPassIn.Text = "Forgot your password?"
+        Me.llbForgotPassIn.Visible = False
+        '
+        'llbCrearUsuarioIn
+        '
+        Me.llbCrearUsuarioIn.AutoSize = True
+        Me.llbCrearUsuarioIn.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llbCrearUsuarioIn.LinkColor = System.Drawing.Color.Silver
+        Me.llbCrearUsuarioIn.Location = New System.Drawing.Point(163, 566)
+        Me.llbCrearUsuarioIn.Name = "llbCrearUsuarioIn"
+        Me.llbCrearUsuarioIn.Size = New System.Drawing.Size(102, 21)
+        Me.llbCrearUsuarioIn.TabIndex = 0
+        Me.llbCrearUsuarioIn.TabStop = True
+        Me.llbCrearUsuarioIn.Text = "Create User"
+        Me.llbCrearUsuarioIn.Visible = False
         '
         'FrmLogIn
         '
@@ -218,13 +261,15 @@ Partial Class FrmLogIn
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(430, 600)
-        Me.Controls.Add(Me.lbCedula)
-        Me.Controls.Add(Me.lbAclaracion)
+        Me.Controls.Add(Me.llbCrearUsuarioIn)
+        Me.Controls.Add(Me.llbForgotPassIn)
+        Me.Controls.Add(Me.llbCrearUsuarioEs)
         Me.Controls.Add(Me.btnChangeLanguage)
-        Me.Controls.Add(Me.llbForgotPass)
+        Me.Controls.Add(Me.llbForgotPassEs)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnLogin)
+        Me.Controls.Add(Me.txtPass)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.topPanel)
         Me.Controls.Add(Me.ShapeContainer1)
@@ -253,12 +298,15 @@ Partial Class FrmLogIn
     Friend WithEvents txtUser As TextBox
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents LineShape1 As PowerPacks.LineShape
+    Friend WithEvents txtPass As TextBox
+    Friend WithEvents LineShape2 As PowerPacks.LineShape
     Friend WithEvents btnLogin As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LineShape3 As PowerPacks.LineShape
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents llbForgotPass As LinkLabel
+    Friend WithEvents llbForgotPassEs As LinkLabel
     Friend WithEvents btnChangeLanguage As PictureBox
-    Friend WithEvents lbAclaracion As Label
-    Friend WithEvents lbCedula As Label
+    Friend WithEvents llbCrearUsuarioEs As LinkLabel
+    Friend WithEvents llbForgotPassIn As LinkLabel
+    Friend WithEvents llbCrearUsuarioIn As LinkLabel
 End Class

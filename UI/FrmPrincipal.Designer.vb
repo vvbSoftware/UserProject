@@ -22,26 +22,26 @@ Partial Class FrmPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrincipal))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnAgendaMedica = New System.Windows.Forms.Button()
+        Me.btnConsulta = New System.Windows.Forms.Button()
+        Me.btnHistorial = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.lbInstrucciones = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnClose = New System.Windows.Forms.PictureBox()
-        Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.PanelChildForm = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnAgendaMedica)
+        Me.Panel1.Controls.Add(Me.btnConsulta)
+        Me.Panel1.Controls.Add(Me.btnHistorial)
         Me.Panel1.Controls.Add(Me.btnCerrar)
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.lbInstrucciones)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 37)
@@ -49,6 +49,63 @@ Partial Class FrmPrincipal
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(222, 683)
         Me.Panel1.TabIndex = 0
+        '
+        'btnAgendaMedica
+        '
+        Me.btnAgendaMedica.FlatAppearance.BorderSize = 0
+        Me.btnAgendaMedica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnAgendaMedica.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgendaMedica.Location = New System.Drawing.Point(0, 285)
+        Me.btnAgendaMedica.Name = "btnAgendaMedica"
+        Me.btnAgendaMedica.Size = New System.Drawing.Size(222, 41)
+        Me.btnAgendaMedica.TabIndex = 300
+        Me.btnAgendaMedica.Text = "AGENDA MEDICA"
+        Me.btnAgendaMedica.UseVisualStyleBackColor = True
+        '
+        'btnConsulta
+        '
+        Me.btnConsulta.FlatAppearance.BorderSize = 0
+        Me.btnConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsulta.Location = New System.Drawing.Point(0, 191)
+        Me.btnConsulta.Name = "btnConsulta"
+        Me.btnConsulta.Size = New System.Drawing.Size(222, 41)
+        Me.btnConsulta.TabIndex = 300
+        Me.btnConsulta.Text = "CONSULTAR"
+        Me.btnConsulta.UseVisualStyleBackColor = True
+        '
+        'btnHistorial
+        '
+        Me.btnHistorial.FlatAppearance.BorderSize = 0
+        Me.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHistorial.Location = New System.Drawing.Point(0, 238)
+        Me.btnHistorial.Name = "btnHistorial"
+        Me.btnHistorial.Size = New System.Drawing.Size(222, 41)
+        Me.btnHistorial.TabIndex = 300
+        Me.btnHistorial.Text = "HISTORIAL"
+        Me.btnHistorial.UseVisualStyleBackColor = True
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.FlatAppearance.BorderSize = 0
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrar.Location = New System.Drawing.Point(0, 642)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(222, 41)
+        Me.btnCerrar.TabIndex = 300
+        Me.btnCerrar.Text = "CERRAR SESION"
+        Me.btnCerrar.UseVisualStyleBackColor = True
+        '
+        'lbInstrucciones
+        '
+        Me.lbInstrucciones.AutoSize = True
+        Me.lbInstrucciones.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbInstrucciones.Location = New System.Drawing.Point(1, 317)
+        Me.lbInstrucciones.Name = "lbInstrucciones"
+        Me.lbInstrucciones.Size = New System.Drawing.Size(0, 17)
+        Me.lbInstrucciones.TabIndex = 1
         '
         'Panel2
         '
@@ -63,38 +120,12 @@ Partial Class FrmPrincipal
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.btnClose)
-        Me.Panel3.Controls.Add(Me.btnMinimize)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1024, 37)
         Me.Panel3.TabIndex = 1
-        '
-        'btnClose
-        '
-        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClose.Image = Global.UI.My.Resources.Resources.Close_Icon
-        Me.btnClose.Location = New System.Drawing.Point(996, 11)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(16, 16)
-        Me.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.btnClose.TabIndex = 3
-        Me.btnClose.TabStop = False
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinimize.Image = Global.UI.My.Resources.Resources.Minimize_Icon
-        Me.btnMinimize.Location = New System.Drawing.Point(974, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(16, 16)
-        Me.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.TabStop = False
         '
         'PanelChildForm
         '
@@ -103,28 +134,6 @@ Partial Class FrmPrincipal
         Me.PanelChildForm.Name = "PanelChildForm"
         Me.PanelChildForm.Size = New System.Drawing.Size(802, 683)
         Me.PanelChildForm.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(3, 216)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(218, 170)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = resources.GetString("Label1.Text")
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.FlatAppearance.BorderSize = 0
-        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrar.Location = New System.Drawing.Point(0, 642)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(222, 41)
-        Me.btnCerrar.TabIndex = 300
-        Me.btnCerrar.Text = "Cerrar"
-        Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'FrmPrincipal
         '
@@ -144,10 +153,6 @@ Partial Class FrmPrincipal
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        CType(Me.btnClose, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -155,9 +160,10 @@ Partial Class FrmPrincipal
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents btnClose As PictureBox
-    Friend WithEvents btnMinimize As PictureBox
     Friend WithEvents PanelChildForm As Panel
     Friend WithEvents btnCerrar As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbInstrucciones As Label
+    Friend WithEvents btnAgendaMedica As Button
+    Friend WithEvents btnHistorial As Button
+    Friend WithEvents btnConsulta As Button
 End Class

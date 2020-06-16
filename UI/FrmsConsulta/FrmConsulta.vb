@@ -3,33 +3,16 @@
         btnChat.Visible = False
     End Sub
     Private Sub btnConsul_Click(sender As Object, e As EventArgs) Handles btnConsul.Click
+        Dim ficha As New FrmFichaMedica
+        ficha.ShowDialog()
         btnChat.Visible = True
     End Sub
     Private Sub btnChat_Click(sender As Object, e As EventArgs) Handles btnChat.Click
         MsgBox("chat")
         OpenChildForm(New FrmChat)
-
     End Sub
-
 
 #Region "styles"
-
-    Public Sub Button1_Paint(sender As Object, e As PaintEventArgs) Handles btnConsul.Paint, btnChat.Paint
-        With btnConsul
-            Dim buttonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
-            Dim myRectangle As Rectangle = .ClientRectangle
-            myRectangle.Inflate(0, 15)
-            buttonPath.AddEllipse(myRectangle)
-            .Region = New Region(buttonPath)
-        End With
-        With btnChat
-            Dim buttonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
-            Dim myRectangle As Rectangle = .ClientRectangle
-            myRectangle.Inflate(0, 15)
-            buttonPath.AddEllipse(myRectangle)
-            .Region = New Region(buttonPath)
-        End With
-    End Sub
     Private currentForm As Form = Nothing 'form en el panel no esta visible porque es el inicio de la app
     'Metodo para abrir ventanas dentro de la principal
     Public Sub OpenChildForm(childForm As Form)
@@ -46,8 +29,11 @@
         childForm.Show()
     End Sub
 
-    Private Sub pnChildCons_Paint(sender As Object, e As PaintEventArgs) Handles pnChildCons.Paint
-
+    Private Sub btnChat_Paint(sender As Object, e As PaintEventArgs) Handles btnConsul.Paint, btnChat.Paint
+        BotonRedondeado(btnConsul)
+        BotonRedondeado(btnChat)
     End Sub
+
+
 #End Region
 End Class

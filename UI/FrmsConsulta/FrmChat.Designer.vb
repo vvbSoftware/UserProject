@@ -25,7 +25,10 @@ Partial Class FrmChat
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.panelChat = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnEnviarMensaje = New System.Windows.Forms.Button()
+        Me.btnSalirChat = New System.Windows.Forms.Button()
+        Me.PanelChildForm = New System.Windows.Forms.Panel()
+        Me.PanelChildForm.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -40,9 +43,9 @@ Partial Class FrmChat
         'panelChat
         '
         Me.panelChat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.panelChat.Location = New System.Drawing.Point(3, 6)
+        Me.panelChat.Location = New System.Drawing.Point(3, 55)
         Me.panelChat.Name = "panelChat"
-        Me.panelChat.Size = New System.Drawing.Size(577, 619)
+        Me.panelChat.Size = New System.Drawing.Size(577, 570)
         Me.panelChat.TabIndex = 1
         '
         'TextBox1
@@ -53,16 +56,38 @@ Partial Class FrmChat
         Me.TextBox1.Size = New System.Drawing.Size(460, 31)
         Me.TextBox1.TabIndex = 1
         '
-        'Button1
+        'btnEnviarMensaje
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(460, 631)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 31)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Enviar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnEnviarMensaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEnviarMensaje.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEnviarMensaje.Location = New System.Drawing.Point(460, 631)
+        Me.btnEnviarMensaje.Name = "btnEnviarMensaje"
+        Me.btnEnviarMensaje.Size = New System.Drawing.Size(120, 31)
+        Me.btnEnviarMensaje.TabIndex = 2
+        Me.btnEnviarMensaje.Text = "Enviar"
+        Me.btnEnviarMensaje.UseVisualStyleBackColor = True
+        '
+        'btnSalirChat
+        '
+        Me.btnSalirChat.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.btnSalirChat.FlatAppearance.BorderSize = 0
+        Me.btnSalirChat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
+        Me.btnSalirChat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalirChat.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalirChat.Location = New System.Drawing.Point(528, 12)
+        Me.btnSalirChat.Name = "btnSalirChat"
+        Me.btnSalirChat.Size = New System.Drawing.Size(52, 37)
+        Me.btnSalirChat.TabIndex = 2
+        Me.btnSalirChat.Text = "SALIR"
+        Me.btnSalirChat.UseVisualStyleBackColor = False
+        '
+        'PanelChildForm
+        '
+        Me.PanelChildForm.Controls.Add(Me.btnSalirChat)
+        Me.PanelChildForm.Location = New System.Drawing.Point(0, 0)
+        Me.PanelChildForm.Name = "PanelChildForm"
+        Me.PanelChildForm.Size = New System.Drawing.Size(778, 696)
+        Me.PanelChildForm.TabIndex = 3
         '
         'FrmChat
         '
@@ -70,16 +95,18 @@ Partial Class FrmChat
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(778, 699)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnEnviarMensaje)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.panelChat)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PanelChildForm)
         Me.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Silver
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmChat"
         Me.Text = "FrmChat"
+        Me.PanelChildForm.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -88,5 +115,7 @@ Partial Class FrmChat
     Friend WithEvents Panel1 As Panel
     Friend WithEvents panelChat As Panel
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnEnviarMensaje As Button
+    Friend WithEvents btnSalirChat As Button
+    Friend WithEvents PanelChildForm As Panel
 End Class
