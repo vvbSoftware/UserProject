@@ -22,21 +22,22 @@ Partial Class FrmFichaMedica
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFichaMedica))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtMedicina = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtOcupacion = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.ckbMedicina = New System.Windows.Forms.CheckBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.ckbFuma = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtMotivoConsulta = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtProcedencia = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -103,16 +104,16 @@ Partial Class FrmFichaMedica
         Me.LineShape1.Y1 = 134
         Me.LineShape1.Y2 = 134
         '
-        'TextBox2
+        'txtOcupacion
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox2.Location = New System.Drawing.Point(230, 116)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(144, 15)
-        Me.TextBox2.TabIndex = 31
+        Me.txtOcupacion.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.txtOcupacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtOcupacion.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOcupacion.ForeColor = System.Drawing.Color.Silver
+        Me.txtOcupacion.Location = New System.Drawing.Point(230, 116)
+        Me.txtOcupacion.Name = "txtOcupacion"
+        Me.txtOcupacion.Size = New System.Drawing.Size(144, 15)
+        Me.txtOcupacion.TabIndex = 31
         '
         'Label3
         '
@@ -126,14 +127,14 @@ Partial Class FrmFichaMedica
         Me.Label3.Text = "Ocupacion"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'CheckBox1
+        'ckbMedicina
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(148, 71)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 34
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ckbMedicina.AutoSize = True
+        Me.ckbMedicina.Location = New System.Drawing.Point(148, 71)
+        Me.ckbMedicina.Name = "ckbMedicina"
+        Me.ckbMedicina.Size = New System.Drawing.Size(15, 14)
+        Me.ckbMedicina.TabIndex = 34
+        Me.ckbMedicina.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -147,14 +148,14 @@ Partial Class FrmFichaMedica
         Me.Label4.Text = "¿Toma medicina?"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'CheckBox2
+        'ckbFuma
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(290, 71)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox2.TabIndex = 34
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.ckbFuma.AutoSize = True
+        Me.ckbFuma.Location = New System.Drawing.Point(290, 71)
+        Me.ckbFuma.Name = "ckbFuma"
+        Me.ckbFuma.Size = New System.Drawing.Size(15, 14)
+        Me.ckbFuma.TabIndex = 34
+        Me.ckbFuma.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -168,16 +169,16 @@ Partial Class FrmFichaMedica
         Me.Label5.Text = "¿Fuma?"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'TextBox1
+        'txtMotivoConsulta
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox1.Location = New System.Drawing.Point(24, 171)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(148, 219)
-        Me.TextBox1.TabIndex = 35
+        Me.txtMotivoConsulta.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.txtMotivoConsulta.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMotivoConsulta.ForeColor = System.Drawing.Color.Silver
+        Me.txtMotivoConsulta.Location = New System.Drawing.Point(24, 171)
+        Me.txtMotivoConsulta.Multiline = True
+        Me.txtMotivoConsulta.Name = "txtMotivoConsulta"
+        Me.txtMotivoConsulta.Size = New System.Drawing.Size(148, 219)
+        Me.txtMotivoConsulta.TabIndex = 35
         '
         'Label6
         '
@@ -191,16 +192,16 @@ Partial Class FrmFichaMedica
         Me.Label6.Text = "Motivo de la consulta"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'TextBox3
+        'txtProcedencia
         '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox3.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox3.Location = New System.Drawing.Point(229, 171)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(148, 219)
-        Me.TextBox3.TabIndex = 35
+        Me.txtProcedencia.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.txtProcedencia.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtProcedencia.ForeColor = System.Drawing.Color.Silver
+        Me.txtProcedencia.Location = New System.Drawing.Point(229, 171)
+        Me.txtProcedencia.Multiline = True
+        Me.txtProcedencia.Name = "txtProcedencia"
+        Me.txtProcedencia.Size = New System.Drawing.Size(148, 219)
+        Me.txtProcedencia.TabIndex = 35
         '
         'Label7
         '
@@ -236,20 +237,21 @@ Partial Class FrmFichaMedica
         Me.ClientSize = New System.Drawing.Size(399, 504)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtProcedencia)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtMotivoConsulta)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.ckbFuma)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.ckbMedicina)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtOcupacion)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtMedicina)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmFichaMedica"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "aw"
@@ -264,15 +266,15 @@ Partial Class FrmFichaMedica
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents LineShape1 As PowerPacks.LineShape
     Friend WithEvents LineShape2 As PowerPacks.LineShape
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtOcupacion As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents ckbMedicina As CheckBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents ckbFuma As CheckBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtMotivoConsulta As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtProcedencia As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents btnAceptar As Button
 End Class

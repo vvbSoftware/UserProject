@@ -85,3 +85,6 @@ C:\Users\GaaraXz\Source\Repos\vvbSoftware\UserProject\UI\bin\Debug\WinFormAnimat
 C:\Users\GaaraXz\Source\Repos\vvbSoftware\UserProject\UI\bin\Debug\CircularProgressBar.xml
 C:\Users\GaaraXz\Source\Repos\vvbSoftware\UserProject\UI\obj\Debug\UI.FrmHistorial.resources
 C:\Users\GaaraXz\Source\Repos\vvbSoftware\UserProject\UI\obj\Debug\UI.FrmAgendaMedica.resources
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\UI\obj\Debug\UI.FrmCrearUsuario.resources
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\UI\obj\Debug\UI.FrmInfo.resources
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\UI\obj\Debug\UI.FrmRecuperarContraseña.resources

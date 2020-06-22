@@ -13,7 +13,6 @@ Public Class FrmLogIn
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        '...
         Me.Hide()
         Dim formwelcome As New FrmBienvenida()
         formwelcome.ShowDialog()
@@ -22,12 +21,20 @@ Public Class FrmLogIn
         form.ShowDialog()
     End Sub
     Private Sub llbForgotPass_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llbForgotPassIn.LinkClicked, llbForgotPassEs.LinkClicked
-
+        Dim frm As New FrmRecuperarContraseña
+        frm.ShowDialog()
     End Sub
 
     Private Sub llbCrearUsuario_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llbCrearUsuarioEs.LinkClicked, llbCrearUsuarioIn.LinkClicked
-
+        Dim frm As New FrmCrearUsuario
+        frm.ShowDialog()
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        Dim frm As New FrmInfo
+        frm.ShowDialog()
+    End Sub
+
     Private Sub btnChangeLanguage_Click(sender As Object, e As EventArgs) Handles btnChangeLanguage.Click
         If txtUser.Text = "USER" Then
             llbForgotPassIn.Visible = False
@@ -113,6 +120,7 @@ Public Class FrmLogIn
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
+
     'DLLImport,Significa que el método declarado a 
     'continuación no está en .NET, sino en un archivo DLL externo (nativo). 
     'En este caso, se encuentra en el archivo User32.dll, que es un componente 

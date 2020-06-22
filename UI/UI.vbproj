@@ -62,6 +62,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>isotipoProyectowhite.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
@@ -138,10 +141,28 @@
     <Compile Include="FrmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmsLogIn\FrmCrearUsuario.Designer.vb">
+      <DependentUpon>FrmCrearUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsLogIn\FrmCrearUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsLogIn\FrmInfo.Designer.vb">
+      <DependentUpon>FrmInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsLogIn\FrmInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmsLogIn\FrmLogIn.designer.vb">
       <DependentUpon>FrmLogIn.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmsLogIn\FrmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsLogIn\FrmRecuperarContraseña.Designer.vb">
+      <DependentUpon>FrmRecuperarContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsLogIn\FrmRecuperarContraseña.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -184,12 +205,22 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmsLogIn\FrmCrearUsuario.resx">
+      <DependentUpon>FrmCrearUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsLogIn\FrmInfo.resx">
+      <DependentUpon>FrmInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmsLogIn\FrmLogIn.resx">
       <DependentUpon>FrmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsLogIn\FrmRecuperarContraseña.resx">
+      <DependentUpon>FrmRecuperarContraseña.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
@@ -212,9 +243,6 @@
     <None Include="Resources\Close_Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LogoPrincipal Segundo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Minimize_Icon.png" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +259,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1533845191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isotipoProyectowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoPrincipal Segundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="isotipoProyectowhite.ico" />
+    <None Include="Resources\agenda.png" />
+    <None Include="Resources\form.png" />
+    <None Include="Resources\consulting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.vbproj">
+      <Project>{6a6e8834-add9-4ba5-bb1e-cc0ba9f8af5c}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

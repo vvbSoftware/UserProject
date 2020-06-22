@@ -25,18 +25,18 @@ Partial Class FrmConsulta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnChildCons = New System.Windows.Forms.Panel()
         Me.btnConsul = New System.Windows.Forms.Button()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma5 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma8 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma4 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma7 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma2 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelMensajeDiagnostico = New System.Windows.Forms.Panel()
         Me.btnChat = New System.Windows.Forms.Button()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma6 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma9 = New System.Windows.Forms.ComboBox()
+        Me.cbSintoma3 = New System.Windows.Forms.ComboBox()
         Me.pnChildCons.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,18 +53,18 @@ Partial Class FrmConsulta
         'pnChildCons
         '
         Me.pnChildCons.Controls.Add(Me.btnConsul)
-        Me.pnChildCons.Controls.Add(Me.ComboBox9)
-        Me.pnChildCons.Controls.Add(Me.ComboBox5)
-        Me.pnChildCons.Controls.Add(Me.ComboBox8)
-        Me.pnChildCons.Controls.Add(Me.ComboBox4)
-        Me.pnChildCons.Controls.Add(Me.ComboBox2)
-        Me.pnChildCons.Controls.Add(Me.ComboBox1)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma5)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma8)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma4)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma7)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma2)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma1)
         Me.pnChildCons.Controls.Add(Me.Label2)
         Me.pnChildCons.Controls.Add(Me.PanelMensajeDiagnostico)
         Me.pnChildCons.Controls.Add(Me.btnChat)
-        Me.pnChildCons.Controls.Add(Me.ComboBox7)
-        Me.pnChildCons.Controls.Add(Me.ComboBox6)
-        Me.pnChildCons.Controls.Add(Me.ComboBox3)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma6)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma9)
+        Me.pnChildCons.Controls.Add(Me.cbSintoma3)
         Me.pnChildCons.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnChildCons.Location = New System.Drawing.Point(0, 0)
         Me.pnChildCons.Name = "pnChildCons"
@@ -85,61 +85,89 @@ Partial Class FrmConsulta
         Me.btnConsul.Text = "CONSULTAR"
         Me.btnConsul.UseVisualStyleBackColor = False
         '
-        'ComboBox5
+        'cbSintoma5
         '
-        Me.ComboBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox5.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(274, 207)
-        Me.ComboBox5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox5.TabIndex = 33
-        Me.ComboBox5.Text = "SINTOMA"
+        Me.cbSintoma5.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma5.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma5.FormattingEnabled = True
+        Me.cbSintoma5.Location = New System.Drawing.Point(274, 142)
+        Me.cbSintoma5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma5.Name = "cbSintoma5"
+        Me.cbSintoma5.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma5.TabIndex = 33
+        Me.cbSintoma5.Text = "SINTOMA"
         '
-        'ComboBox4
+        'cbSintoma8
         '
-        Me.ComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(24, 207)
-        Me.ComboBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox4.TabIndex = 32
-        Me.ComboBox4.Text = "SINTOMA"
+        Me.cbSintoma8.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma8.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma8.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma8.FormattingEnabled = True
+        Me.cbSintoma8.Location = New System.Drawing.Point(274, 207)
+        Me.cbSintoma8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma8.Name = "cbSintoma8"
+        Me.cbSintoma8.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma8.TabIndex = 33
+        Me.cbSintoma8.Text = "SINTOMA"
         '
-        'ComboBox2
+        'cbSintoma4
         '
-        Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(274, 82)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox2.TabIndex = 31
-        Me.ComboBox2.Text = "SINTOMA"
+        Me.cbSintoma4.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma4.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma4.FormattingEnabled = True
+        Me.cbSintoma4.Location = New System.Drawing.Point(24, 142)
+        Me.cbSintoma4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma4.Name = "cbSintoma4"
+        Me.cbSintoma4.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma4.TabIndex = 32
+        Me.cbSintoma4.Text = "SINTOMA"
         '
-        'ComboBox1
+        'cbSintoma7
         '
-        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(24, 82)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox1.TabIndex = 30
-        Me.ComboBox1.Text = "SINTOMA"
+        Me.cbSintoma7.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma7.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma7.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma7.FormattingEnabled = True
+        Me.cbSintoma7.Location = New System.Drawing.Point(24, 207)
+        Me.cbSintoma7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma7.Name = "cbSintoma7"
+        Me.cbSintoma7.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma7.TabIndex = 32
+        Me.cbSintoma7.Text = "SINTOMA"
+        '
+        'cbSintoma2
+        '
+        Me.cbSintoma2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma2.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma2.FormattingEnabled = True
+        Me.cbSintoma2.Location = New System.Drawing.Point(274, 82)
+        Me.cbSintoma2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma2.Name = "cbSintoma2"
+        Me.cbSintoma2.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma2.TabIndex = 31
+        Me.cbSintoma2.Text = "SINTOMA"
+        '
+        'cbSintoma1
+        '
+        Me.cbSintoma1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma1.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma1.FormattingEnabled = True
+        Me.cbSintoma1.Location = New System.Drawing.Point(24, 82)
+        Me.cbSintoma1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma1.Name = "cbSintoma1"
+        Me.cbSintoma1.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma1.TabIndex = 30
+        Me.cbSintoma1.Text = "SINTOMA"
         '
         'Label2
         '
@@ -175,75 +203,47 @@ Partial Class FrmConsulta
         Me.btnChat.Text = "CHAT"
         Me.btnChat.UseVisualStyleBackColor = False
         '
-        'ComboBox6
+        'cbSintoma6
         '
-        Me.ComboBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox6.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(523, 207)
-        Me.ComboBox6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox6.TabIndex = 27
-        Me.ComboBox6.Text = "SINTOMA"
+        Me.cbSintoma6.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma6.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma6.FormattingEnabled = True
+        Me.cbSintoma6.Location = New System.Drawing.Point(523, 142)
+        Me.cbSintoma6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma6.Name = "cbSintoma6"
+        Me.cbSintoma6.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma6.TabIndex = 27
+        Me.cbSintoma6.Text = "SINTOMA"
         '
-        'ComboBox3
+        'cbSintoma9
         '
-        Me.ComboBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(523, 82)
-        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox3.TabIndex = 22
-        Me.ComboBox3.Text = "SINTOMA"
+        Me.cbSintoma9.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma9.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma9.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma9.FormattingEnabled = True
+        Me.cbSintoma9.Location = New System.Drawing.Point(523, 207)
+        Me.cbSintoma9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma9.Name = "cbSintoma9"
+        Me.cbSintoma9.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma9.TabIndex = 27
+        Me.cbSintoma9.Text = "SINTOMA"
         '
-        'ComboBox7
+        'cbSintoma3
         '
-        Me.ComboBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox7.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox7.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(523, 142)
-        Me.ComboBox7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox7.TabIndex = 27
-        Me.ComboBox7.Text = "SINTOMA"
-        '
-        'ComboBox8
-        '
-        Me.ComboBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox8.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox8.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Location = New System.Drawing.Point(24, 142)
-        Me.ComboBox8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox8.TabIndex = 32
-        Me.ComboBox8.Text = "SINTOMA"
-        '
-        'ComboBox9
-        '
-        Me.ComboBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ComboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox9.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox9.ForeColor = System.Drawing.Color.Silver
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(274, 142)
-        Me.ComboBox9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(233, 24)
-        Me.ComboBox9.TabIndex = 33
-        Me.ComboBox9.Text = "SINTOMA"
+        Me.cbSintoma3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.cbSintoma3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSintoma3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSintoma3.ForeColor = System.Drawing.Color.Silver
+        Me.cbSintoma3.FormattingEnabled = True
+        Me.cbSintoma3.Location = New System.Drawing.Point(523, 82)
+        Me.cbSintoma3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbSintoma3.Name = "cbSintoma3"
+        Me.cbSintoma3.Size = New System.Drawing.Size(233, 24)
+        Me.cbSintoma3.TabIndex = 22
+        Me.cbSintoma3.Text = "SINTOMA"
         '
         'FrmConsulta
         '
@@ -269,14 +269,14 @@ Partial Class FrmConsulta
     Friend WithEvents Label2 As Label
     Friend WithEvents PanelMensajeDiagnostico As Panel
     Friend WithEvents btnChat As Button
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents cbSintoma9 As ComboBox
+    Friend WithEvents cbSintoma3 As ComboBox
     Friend WithEvents btnConsul As Button
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox9 As ComboBox
-    Friend WithEvents ComboBox8 As ComboBox
-    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents cbSintoma8 As ComboBox
+    Friend WithEvents cbSintoma7 As ComboBox
+    Friend WithEvents cbSintoma2 As ComboBox
+    Friend WithEvents cbSintoma1 As ComboBox
+    Friend WithEvents cbSintoma5 As ComboBox
+    Friend WithEvents cbSintoma4 As ComboBox
+    Friend WithEvents cbSintoma6 As ComboBox
 End Class

@@ -23,6 +23,7 @@ Partial Class FrmBienvenida
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBienvenida))
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -32,7 +33,9 @@ Partial Class FrmBienvenida
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.CircularProgressBar1 = New CircularProgressBar.CircularProgressBar()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ShapeContainer1
@@ -60,11 +63,11 @@ Partial Class FrmBienvenida
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Silver
-        Me.Label1.Location = New System.Drawing.Point(85, 9)
+        Me.Label1.Location = New System.Drawing.Point(71, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(347, 33)
+        Me.Label1.Size = New System.Drawing.Size(393, 33)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Sistema de auto consulta"
+        Me.Label1.Text = "Sistema de Consulta Medica"
         '
         'Label2
         '
@@ -139,12 +142,23 @@ Partial Class FrmBienvenida
         Me.CircularProgressBar1.TextMargin = New System.Windows.Forms.Padding(8, 8, 0, 0)
         Me.CircularProgressBar1.Value = 68
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.UI.My.Resources.Resources.isotipoProyectowhite
+        Me.PictureBox2.Location = New System.Drawing.Point(8, 7)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(53, 39)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 7
+        Me.PictureBox2.TabStop = False
+        '
         'FrmBienvenida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(732, 310)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.CircularProgressBar1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox1)
@@ -152,11 +166,13 @@ Partial Class FrmBienvenida
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmBienvenida"
         Me.Opacity = 0.9R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bienvenida"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -171,4 +187,5 @@ Partial Class FrmBienvenida
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
     Friend WithEvents CircularProgressBar1 As CircularProgressBar.CircularProgressBar
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

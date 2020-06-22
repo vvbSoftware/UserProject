@@ -1,14 +1,30 @@
-﻿Public Class FrmConsulta
+﻿Imports Logic
+Public Class FrmConsulta
+
     Private Sub Consulta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnChat.Visible = False
     End Sub
     Private Sub btnConsul_Click(sender As Object, e As EventArgs) Handles btnConsul.Click
-        Dim ficha As New FrmFichaMedica
-        ficha.ShowDialog()
-        btnChat.Visible = True
+        Dim _cedula As String
+        'creo un array de los sintomas seleccionados
+        Dim _sintomas As New ArrayList
+        'agrego cada sintoma del comboBox al array
+        _sintomas.Add(cbSintoma3.Text)
+        _sintomas.Add(cbSintoma4.Text)
+        _sintomas.Add(cbSintoma5.Text)
+        _sintomas.Add(cbSintoma6.Text)
+        _sintomas.Add(cbSintoma7.Text)
+        _sintomas.Add(cbSintoma8.Text)
+
+        'lo agrego para diagnosticar
+        Dim selecciona As New Selecciona(_sintomas, _cedula)
+
+
+        'Dim ficha As New FrmFichaMedica
+        'ficha.ShowDialog()
+        'btnChat.Visible = True
     End Sub
     Private Sub btnChat_Click(sender As Object, e As EventArgs) Handles btnChat.Click
-        MsgBox("chat")
         OpenChildForm(New FrmChat)
     End Sub
 

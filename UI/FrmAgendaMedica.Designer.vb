@@ -22,13 +22,14 @@ Partial Class FrmAgendaMedica
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAgendaMedica))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnFiltrar = New System.Windows.Forms.Button()
         Me.cbFiltro = New System.Windows.Forms.ComboBox()
-        Me.DgvDatos = New System.Windows.Forms.DataGridView()
+        Me.DgvAgenda = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -40,7 +41,7 @@ Partial Class FrmAgendaMedica
         Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        CType(Me.DgvDatos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvAgenda, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -48,7 +49,7 @@ Partial Class FrmAgendaMedica
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Silver
-        Me.Label2.Location = New System.Drawing.Point(211, 9)
+        Me.Label2.Location = New System.Drawing.Point(211, 4)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(312, 36)
         Me.Label2.TabIndex = 30
@@ -60,12 +61,12 @@ Partial Class FrmAgendaMedica
         Me.btnFiltrar.FlatAppearance.BorderSize = 0
         Me.btnFiltrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFiltrar.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFiltrar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFiltrar.ForeColor = System.Drawing.Color.Silver
-        Me.btnFiltrar.Location = New System.Drawing.Point(278, 84)
+        Me.btnFiltrar.Location = New System.Drawing.Point(276, 84)
         Me.btnFiltrar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnFiltrar.Name = "btnFiltrar"
-        Me.btnFiltrar.Size = New System.Drawing.Size(233, 49)
+        Me.btnFiltrar.Size = New System.Drawing.Size(233, 32)
         Me.btnFiltrar.TabIndex = 33
         Me.btnFiltrar.Text = "FILTRAR"
         Me.btnFiltrar.UseVisualStyleBackColor = False
@@ -77,55 +78,55 @@ Partial Class FrmAgendaMedica
         Me.cbFiltro.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbFiltro.ForeColor = System.Drawing.Color.Silver
         Me.cbFiltro.FormattingEnabled = True
-        Me.cbFiltro.Location = New System.Drawing.Point(14, 92)
+        Me.cbFiltro.Location = New System.Drawing.Point(14, 87)
         Me.cbFiltro.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cbFiltro.Name = "cbFiltro"
         Me.cbFiltro.Size = New System.Drawing.Size(256, 24)
         Me.cbFiltro.TabIndex = 32
         '
-        'DgvDatos
+        'DgvAgenda
         '
-        Me.DgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.DgvDatos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DgvDatos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.DgvDatos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DgvDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DgvDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvDatos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.DgvDatos.ColumnHeadersHeight = 30
-        Me.DgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DgvDatos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvDatos.DefaultCellStyle = DataGridViewCellStyle5
-        Me.DgvDatos.EnableHeadersVisualStyles = False
-        Me.DgvDatos.GridColor = System.Drawing.Color.SteelBlue
-        Me.DgvDatos.Location = New System.Drawing.Point(14, 141)
-        Me.DgvDatos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.DgvDatos.Name = "DgvDatos"
-        Me.DgvDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvDatos.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.DgvDatos.Size = New System.Drawing.Size(752, 258)
-        Me.DgvDatos.TabIndex = 31
+        Me.DgvAgenda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DgvAgenda.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DgvAgenda.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.DgvAgenda.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DgvAgenda.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DgvAgenda.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvAgenda.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DgvAgenda.ColumnHeadersHeight = 30
+        Me.DgvAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DgvAgenda.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvAgenda.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DgvAgenda.EnableHeadersVisualStyles = False
+        Me.DgvAgenda.GridColor = System.Drawing.Color.SteelBlue
+        Me.DgvAgenda.Location = New System.Drawing.Point(14, 136)
+        Me.DgvAgenda.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.DgvAgenda.Name = "DgvAgenda"
+        Me.DgvAgenda.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvAgenda.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.DgvAgenda.Size = New System.Drawing.Size(752, 258)
+        Me.DgvAgenda.TabIndex = 31
         '
         'Column1
         '
@@ -187,8 +188,8 @@ Partial Class FrmAgendaMedica
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 0
         Me.LineShape1.X2 = 778
-        Me.LineShape1.Y1 = 400
-        Me.LineShape1.Y2 = 400
+        Me.LineShape1.Y1 = 394
+        Me.LineShape1.Y2 = 394
         '
         'ShapeContainer1
         '
@@ -208,15 +209,16 @@ Partial Class FrmAgendaMedica
         Me.ClientSize = New System.Drawing.Size(778, 699)
         Me.Controls.Add(Me.btnFiltrar)
         Me.Controls.Add(Me.cbFiltro)
-        Me.Controls.Add(Me.DgvDatos)
+        Me.Controls.Add(Me.DgvAgenda)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmAgendaMedica"
         Me.Text = "FrmAgendaMedica"
-        CType(Me.DgvDatos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvAgenda, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -225,7 +227,7 @@ Partial Class FrmAgendaMedica
     Friend WithEvents Label2 As Label
     Friend WithEvents btnFiltrar As Button
     Friend WithEvents cbFiltro As ComboBox
-    Friend WithEvents DgvDatos As DataGridView
+    Friend WithEvents DgvAgenda As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn

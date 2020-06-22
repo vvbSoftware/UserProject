@@ -1,0 +1,10 @@
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\DataAccess.xml
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.vbprojAssemblyReference.cache
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.Resources.resources
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.vbproj.GenerateResource.cache
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.vbproj.CoreCompileInputs.cache
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.xml
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.pdb

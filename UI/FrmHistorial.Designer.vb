@@ -22,12 +22,13 @@ Partial Class FrmHistorial
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmHistorial))
         Me.btnFiltrar = New System.Windows.Forms.Button()
         Me.cbFiltro = New System.Windows.Forms.ComboBox()
-        Me.DgvDatos = New System.Windows.Forms.DataGridView()
+        Me.DgvHistorial = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -38,17 +39,9 @@ Partial Class FrmHistorial
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PanelChildForm = New System.Windows.Forms.Panel()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        CType(Me.DgvDatos, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelChildForm.SuspendLayout()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        CType(Me.DgvHistorial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnFiltrar
@@ -57,13 +50,13 @@ Partial Class FrmHistorial
         Me.btnFiltrar.FlatAppearance.BorderSize = 0
         Me.btnFiltrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFiltrar.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFiltrar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFiltrar.ForeColor = System.Drawing.Color.Silver
-        Me.btnFiltrar.Location = New System.Drawing.Point(277, 99)
+        Me.btnFiltrar.Location = New System.Drawing.Point(277, 83)
         Me.btnFiltrar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnFiltrar.Name = "btnFiltrar"
-        Me.btnFiltrar.Size = New System.Drawing.Size(233, 49)
-        Me.btnFiltrar.TabIndex = 11
+        Me.btnFiltrar.Size = New System.Drawing.Size(233, 32)
+        Me.btnFiltrar.TabIndex = 41
         Me.btnFiltrar.Text = "FILTRAR"
         Me.btnFiltrar.UseVisualStyleBackColor = False
         '
@@ -74,55 +67,55 @@ Partial Class FrmHistorial
         Me.cbFiltro.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbFiltro.ForeColor = System.Drawing.Color.Silver
         Me.cbFiltro.FormattingEnabled = True
-        Me.cbFiltro.Location = New System.Drawing.Point(13, 107)
+        Me.cbFiltro.Location = New System.Drawing.Point(13, 86)
         Me.cbFiltro.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cbFiltro.Name = "cbFiltro"
         Me.cbFiltro.Size = New System.Drawing.Size(256, 24)
-        Me.cbFiltro.TabIndex = 10
+        Me.cbFiltro.TabIndex = 40
         '
-        'DgvDatos
+        'DgvHistorial
         '
-        Me.DgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.DgvDatos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DgvDatos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.DgvDatos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DgvDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DgvDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvDatos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.DgvDatos.ColumnHeadersHeight = 30
-        Me.DgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DgvDatos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvDatos.DefaultCellStyle = DataGridViewCellStyle5
-        Me.DgvDatos.EnableHeadersVisualStyles = False
-        Me.DgvDatos.GridColor = System.Drawing.Color.SteelBlue
-        Me.DgvDatos.Location = New System.Drawing.Point(13, 156)
-        Me.DgvDatos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.DgvDatos.Name = "DgvDatos"
-        Me.DgvDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvDatos.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.DgvDatos.Size = New System.Drawing.Size(752, 258)
-        Me.DgvDatos.TabIndex = 9
+        Me.DgvHistorial.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DgvHistorial.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DgvHistorial.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.DgvHistorial.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DgvHistorial.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DgvHistorial.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(55, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvHistorial.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DgvHistorial.ColumnHeadersHeight = 30
+        Me.DgvHistorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DgvHistorial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvHistorial.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DgvHistorial.EnableHeadersVisualStyles = False
+        Me.DgvHistorial.GridColor = System.Drawing.Color.SteelBlue
+        Me.DgvHistorial.Location = New System.Drawing.Point(13, 135)
+        Me.DgvHistorial.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.DgvHistorial.Name = "DgvHistorial"
+        Me.DgvHistorial.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvHistorial.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.DgvHistorial.Size = New System.Drawing.Size(752, 258)
+        Me.DgvHistorial.TabIndex = 39
         '
         'Column1
         '
@@ -183,94 +176,20 @@ Partial Class FrmHistorial
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Silver
-        Me.Label2.Location = New System.Drawing.Point(240, 11)
+        Me.Label2.Location = New System.Drawing.Point(210, 3)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(393, 36)
-        Me.Label2.TabIndex = 30
-        Me.Label2.Text = "Mirar Historial de consultas"
+        Me.Label2.Size = New System.Drawing.Size(311, 36)
+        Me.Label2.TabIndex = 38
+        Me.Label2.Text = "Historial de consultas"
         '
-        'TextBox6
+        'LineShape1
         '
-        Me.TextBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox6.Location = New System.Drawing.Point(551, 467)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox6.TabIndex = 31
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox5.Location = New System.Drawing.Point(551, 535)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox5.TabIndex = 32
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox4.Location = New System.Drawing.Point(296, 467)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox4.TabIndex = 33
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox3.Location = New System.Drawing.Point(296, 535)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox3.TabIndex = 34
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox2.Location = New System.Drawing.Point(40, 535)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(201, 21)
-        Me.TextBox2.TabIndex = 35
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.ForeColor = System.Drawing.Color.Silver
-        Me.TextBox1.Location = New System.Drawing.Point(40, 467)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox1.TabIndex = 36
-        '
-        'PanelChildForm
-        '
-        Me.PanelChildForm.Controls.Add(Me.TextBox6)
-        Me.PanelChildForm.Controls.Add(Me.btnFiltrar)
-        Me.PanelChildForm.Controls.Add(Me.TextBox5)
-        Me.PanelChildForm.Controls.Add(Me.TextBox4)
-        Me.PanelChildForm.Controls.Add(Me.cbFiltro)
-        Me.PanelChildForm.Controls.Add(Me.TextBox3)
-        Me.PanelChildForm.Controls.Add(Me.DgvDatos)
-        Me.PanelChildForm.Controls.Add(Me.TextBox2)
-        Me.PanelChildForm.Controls.Add(Me.TextBox1)
-        Me.PanelChildForm.Controls.Add(Me.ShapeContainer1)
-        Me.PanelChildForm.Location = New System.Drawing.Point(1, 4)
-        Me.PanelChildForm.Name = "PanelChildForm"
-        Me.PanelChildForm.Size = New System.Drawing.Size(777, 698)
-        Me.PanelChildForm.TabIndex = 38
+        Me.LineShape1.BorderColor = System.Drawing.Color.Silver
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 0
+        Me.LineShape1.X2 = 778
+        Me.LineShape1.Y1 = 393
+        Me.LineShape1.Y2 = 393
         '
         'ShapeContainer1
         '
@@ -278,18 +197,9 @@ Partial Class FrmHistorial
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(777, 698)
-        Me.ShapeContainer1.TabIndex = 37
+        Me.ShapeContainer1.Size = New System.Drawing.Size(778, 699)
+        Me.ShapeContainer1.TabIndex = 42
         Me.ShapeContainer1.TabStop = False
-        '
-        'LineShape1
-        '
-        Me.LineShape1.BorderColor = System.Drawing.Color.Silver
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 0
-        Me.LineShape1.X2 = 777
-        Me.LineShape1.Y1 = 415
-        Me.LineShape1.Y2 = 415
         '
         'FrmHistorial
         '
@@ -297,31 +207,25 @@ Partial Class FrmHistorial
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(778, 699)
+        Me.Controls.Add(Me.btnFiltrar)
+        Me.Controls.Add(Me.cbFiltro)
+        Me.Controls.Add(Me.DgvHistorial)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.PanelChildForm)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmHistorial"
         Me.Text = "FrmHistorial"
-        CType(Me.DgvDatos, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelChildForm.ResumeLayout(False)
-        Me.PanelChildForm.PerformLayout()
+        CType(Me.DgvHistorial, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
     Friend WithEvents btnFiltrar As Button
     Friend WithEvents cbFiltro As ComboBox
-    Friend WithEvents DgvDatos As DataGridView
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents DgvHistorial As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -331,7 +235,7 @@ Partial Class FrmHistorial
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewTextBoxColumn
     Friend WithEvents Column9 As DataGridViewTextBoxColumn
-    Friend WithEvents PanelChildForm As Panel
-    Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
+    Friend WithEvents Label2 As Label
     Friend WithEvents LineShape1 As PowerPacks.LineShape
+    Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
 End Class
