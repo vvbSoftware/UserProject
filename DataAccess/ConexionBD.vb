@@ -2,7 +2,7 @@
 Public MustInherit Class ConexionBD
     'declaro MustInherits para que no se pueda crear una instancia(objeto) de esta clase
     'cadena de conexion a la bd
-    Private connString As String = "server=localhost;database=consultamedicabd;user id=;password=;port=3306;"
+    Private connString As String = "server=localhost;database=consultamedicabd;user id=eberon;password=silomontolomeo;port=3306;"
     Private conn As MySqlConnection
 
     Protected Sub New()
@@ -54,6 +54,7 @@ Public MustInherit Class ConexionBD
             MsgBox("ERROR::" & ex.Message)
             conn.Close()
         End Try
+        Return Nothing
     End Function
 
     'Para obtener los datos de las tablas y mostrarlos por dataGridView
@@ -74,5 +75,25 @@ Public MustInherit Class ConexionBD
         End Try
         Return dataTable
     End Function
+    Public Function DevolverParaComboBox(consulta As String) As DataSet
+        Dim dataSet As New DataSet
+        Dim adapter As MySqlDataAdapter
+        Dim commadnSQL As MySqlCommand
 
+        Try
+            conn.Open()
+            commadnSQL = New MySqlCommand()
+            commadnSQL.CommandText = consulta
+            commadnSQL.CommandType = CommandType.Text
+            commadnSQL.Connection = conn
+
+            adapter = New MySqlDataAdapter(commadnSQL)
+            adapter.Fill(dataSet)
+            conn.Close()
+        Catch ex As Exception
+            MsgBox("Error : " & ex.Message)
+            conn.Close()
+        End Try
+        Return dataSet
+    End Function
 End Class

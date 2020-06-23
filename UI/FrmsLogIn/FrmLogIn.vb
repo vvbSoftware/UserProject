@@ -1,5 +1,8 @@
 ﻿Imports System.Runtime.InteropServices
+Imports Logic
 Public Class FrmLogIn
+
+    Public paci As Paciente
     ' Las letras In y Es al final de los labels significan Ingles y Español
     Private _languageState As String
     Private Sub LogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -13,13 +16,31 @@ Public Class FrmLogIn
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Me.Hide()
-        Dim formwelcome As New FrmBienvenida()
-        formwelcome.ShowDialog()
+        paci = New Paciente(txtUser.Text, txtPass.Text)
+        Dim validLogin As Boolean = paci.ComprobarLogin(paci)
 
-        Dim form As New FrmPrincipal
-        form.ShowDialog()
+        If validLogin = True Then
+            Me.Hide()
+            Dim formwelcome As New FrmBienvenida()
+            formwelcome.ShowDialog()
+            Dim form As New FrmPrincipal
+            form.Show()
+            AddHandler form.FormClosed, AddressOf Me.Logout
+            Me.Hide()
+        Else
+            ErrorProvider1.SetError(Me.txtUser, "Nombre de usuario o contraseña INCORRECTOS.")
+            'MessageBox.Show("Nombre de usuario o contraseña INCORRECTOS." + vbNewLine + "Por favor intente de nuevo.")
+            txtPass.Clear()
+            txtPass.Focus()
+        End If
     End Sub
+    Private Sub Logout(sender As Object, e As FormClosedEventArgs)
+        txtUser.Clear()
+        txtPass.Clear()
+        Me.Show()
+        txtUser.Focus()
+    End Sub
+
     Private Sub llbForgotPass_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llbForgotPassIn.LinkClicked, llbForgotPassEs.LinkClicked
         Dim frm As New FrmRecuperarContraseña
         frm.ShowDialog()

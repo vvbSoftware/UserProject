@@ -37,7 +37,10 @@ Partial Class FrmConsulta
         Me.cbSintoma6 = New System.Windows.Forms.ComboBox()
         Me.cbSintoma9 = New System.Windows.Forms.ComboBox()
         Me.cbSintoma3 = New System.Windows.Forms.ComboBox()
+        Me.dgvDiagnostico = New System.Windows.Forms.DataGridView()
         Me.pnChildCons.SuspendLayout()
+        Me.PanelMensajeDiagnostico.SuspendLayout()
+        CType(Me.dgvDiagnostico, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -183,6 +186,7 @@ Partial Class FrmConsulta
         'PanelMensajeDiagnostico
         '
         Me.PanelMensajeDiagnostico.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.PanelMensajeDiagnostico.Controls.Add(Me.dgvDiagnostico)
         Me.PanelMensajeDiagnostico.Location = New System.Drawing.Point(11, 451)
         Me.PanelMensajeDiagnostico.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PanelMensajeDiagnostico.Name = "PanelMensajeDiagnostico"
@@ -245,6 +249,14 @@ Partial Class FrmConsulta
         Me.cbSintoma3.TabIndex = 22
         Me.cbSintoma3.Text = "SINTOMA"
         '
+        'dgvDiagnostico
+        '
+        Me.dgvDiagnostico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDiagnostico.Location = New System.Drawing.Point(3, 3)
+        Me.dgvDiagnostico.Name = "dgvDiagnostico"
+        Me.dgvDiagnostico.Size = New System.Drawing.Size(747, 219)
+        Me.dgvDiagnostico.TabIndex = 0
+        '
         'FrmConsulta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -260,6 +272,8 @@ Partial Class FrmConsulta
         Me.Text = "Consulta"
         Me.pnChildCons.ResumeLayout(False)
         Me.pnChildCons.PerformLayout()
+        Me.PanelMensajeDiagnostico.ResumeLayout(False)
+        CType(Me.dgvDiagnostico, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -279,4 +293,5 @@ Partial Class FrmConsulta
     Friend WithEvents cbSintoma5 As ComboBox
     Friend WithEvents cbSintoma4 As ComboBox
     Friend WithEvents cbSintoma6 As ComboBox
+    Friend WithEvents dgvDiagnostico As DataGridView
 End Class

@@ -22,6 +22,7 @@ Partial Class FrmLogIn
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmLogIn))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.topPanel = New System.Windows.Forms.Panel()
@@ -42,12 +43,14 @@ Partial Class FrmLogIn
         Me.btnInfo = New System.Windows.Forms.PictureBox()
         Me.btnChangeLanguage = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.topPanel.SuspendLayout()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnChangeLanguage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -241,7 +244,7 @@ Partial Class FrmLogIn
         '
         Me.btnInfo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnInfo.Image = Global.UI.My.Resources.Resources.information1
-        Me.btnInfo.Location = New System.Drawing.Point(400, 249)
+        Me.btnInfo.Location = New System.Drawing.Point(9, 239)
         Me.btnInfo.Name = "btnInfo"
         Me.btnInfo.Size = New System.Drawing.Size(24, 24)
         Me.btnInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -268,6 +271,10 @@ Partial Class FrmLogIn
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
+        '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
         '
         'FrmLogIn
         '
@@ -303,6 +310,7 @@ Partial Class FrmLogIn
         CType(Me.btnInfo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnChangeLanguage, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -327,4 +335,5 @@ Partial Class FrmLogIn
     Friend WithEvents llbForgotPassIn As LinkLabel
     Friend WithEvents llbCrearUsuarioIn As LinkLabel
     Friend WithEvents btnInfo As PictureBox
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class

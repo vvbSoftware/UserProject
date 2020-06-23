@@ -68,8 +68,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="DBDiagnostico.vb" />
     <Compile Include="ConexionBD.vb" />
+    <Compile Include="DBEnfermedades.vb" />
+    <Compile Include="DBSintomas.vb" />
+    <Compile Include="Login.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

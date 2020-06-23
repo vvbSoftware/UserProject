@@ -9,6 +9,10 @@
     Property _pApe As String
     Property _sApe As String
 
+    Public Sub New(ci As String)
+        _ci = ci
+    End Sub
+
     Public Sub New(ci As String, tel_cel As Object, edad As Object,
                    domicilio As String, sexo As String, pNom As String,
                    sNom As String, pApe As String, sApe As String)

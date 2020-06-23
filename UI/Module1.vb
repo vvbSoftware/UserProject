@@ -1,4 +1,5 @@
-﻿Module Module1
+﻿Imports Logic
+Module Module1
 
     Public Sub BotonRedondeado(btn As Button)
         Dim buttonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
@@ -24,4 +25,16 @@
         childForm.BringToFront()
         childForm.Show()
     End Sub
+
+    Public Sub cargarComboBox(cb As ComboBox)
+        Dim sinObt As New Sintoma
+        With cb
+            .DataSource = sinObt.DevolverSintomaComboBox.Tables(0)
+            .DisplayMember = "nombre" 'elnombre de tu columna de tu base de datos q deseas mostrar
+            .ValueMember = "id" 'el id de tu tabla relacionada con el nombre que muestras muy importante para saber el ide de quien seleccionas en tu combobox
+            .Text = "SINTOMA"
+        End With
+
+    End Sub
+
 End Module

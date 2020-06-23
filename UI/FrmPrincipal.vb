@@ -12,7 +12,10 @@
     End Sub
 
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
-        'para cerrar sesion
+        If MessageBox.Show("Seguro que desa salir?", "Advertencia",
+         MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Me.Close()
+        End If
     End Sub
 
     Private Sub btnAgendaMedica_Click(sender As Object, e As EventArgs) Handles btnAgendaMedica.Click

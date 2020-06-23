@@ -8,3 +8,10 @@ C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataA
 C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.xml
 C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\MySql.Data.dll
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\Google.Protobuf.dll
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\Renci.SshNet.dll
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\bin\Debug\MySql.Data.xml
+C:\Users\GaaraXz\source\repos\vvbSoftware\UserProject\DataAccess\obj\Debug\DataAccess.vbproj.CopyComplete
