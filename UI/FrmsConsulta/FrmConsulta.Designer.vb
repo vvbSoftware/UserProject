@@ -33,11 +33,11 @@ Partial Class FrmConsulta
         Me.cbSintoma1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelMensajeDiagnostico = New System.Windows.Forms.Panel()
+        Me.dgvDiagnostico = New System.Windows.Forms.DataGridView()
         Me.btnChat = New System.Windows.Forms.Button()
         Me.cbSintoma6 = New System.Windows.Forms.ComboBox()
         Me.cbSintoma9 = New System.Windows.Forms.ComboBox()
         Me.cbSintoma3 = New System.Windows.Forms.ComboBox()
-        Me.dgvDiagnostico = New System.Windows.Forms.DataGridView()
         Me.pnChildCons.SuspendLayout()
         Me.PanelMensajeDiagnostico.SuspendLayout()
         CType(Me.dgvDiagnostico, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -193,6 +193,14 @@ Partial Class FrmConsulta
         Me.PanelMensajeDiagnostico.Size = New System.Drawing.Size(757, 225)
         Me.PanelMensajeDiagnostico.TabIndex = 25
         '
+        'dgvDiagnostico
+        '
+        Me.dgvDiagnostico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDiagnostico.Location = New System.Drawing.Point(3, 3)
+        Me.dgvDiagnostico.Name = "dgvDiagnostico"
+        Me.dgvDiagnostico.Size = New System.Drawing.Size(754, 219)
+        Me.dgvDiagnostico.TabIndex = 0
+        '
         'btnChat
         '
         Me.btnChat.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
@@ -248,14 +256,6 @@ Partial Class FrmConsulta
         Me.cbSintoma3.Size = New System.Drawing.Size(233, 24)
         Me.cbSintoma3.TabIndex = 22
         Me.cbSintoma3.Text = "SINTOMA"
-        '
-        'dgvDiagnostico
-        '
-        Me.dgvDiagnostico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDiagnostico.Location = New System.Drawing.Point(3, 3)
-        Me.dgvDiagnostico.Name = "dgvDiagnostico"
-        Me.dgvDiagnostico.Size = New System.Drawing.Size(747, 219)
-        Me.dgvDiagnostico.TabIndex = 0
         '
         'FrmConsulta
         '

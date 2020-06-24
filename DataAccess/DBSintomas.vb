@@ -20,24 +20,35 @@ Public Class DBSintomas
 
     Public Function GuardarSeleccion(sintomas As ArrayList, ci As String, dia As String, hora As String) As Boolean
         Dim sql As String = ""
+        'Try
+        '    For Each sintoma In sintomas
+        '        Dim sql As String = "INSERT INTO selec(dia,hora,idSint,idPac)"
+        '        sql &= " VALUES("
+        '        sql &= "'" & dia & "',"
+        '        sql &= "'" & hora & "',"
+        '        sql &= "'" & sintoma & "',"
+        '        sql &= "'" & ci & "');"
+        '        consultaEjecutar(sql)
+        '    Next
+        '    Return True
+        'Catch ex As Exception
+        '    Return False
+        '    MsgBox("ERROR::" & ex.Message)
+        'End Try
         Try
             Using connection = GetConnection()
                 connection.Open()
                 Using command = New MySqlCommand()
                     command.Connection = connection
 
-                    'command.Parameters.AddWithValue("@idPac", ci)
-                    'command.Parameters.AddWithValue("@idSint", sintomas)
-                    'command.Parameters.AddWithValue("@dia", dia)
-                    'command.Parameters.AddWithValue("@hora", hora)
                     For Each sintoma In sintomas
-                        sql &= "INSERT INTO selec(dia,hora,idSint,idPac)"
-                        sql &= "VALUES("
-                        sql &= "'" & dia & "'"
-                        sql &= "'" & hora & "'"
-                        sql &= "'" & sintoma & "'"
-                        sql &= "'" & ci & "');"
-                        command.CommandText = sql
+                        Sql &= "INSERT INTO selec(dia,hora,idSint,idPac)"
+                        sql &= " VALUES("
+                        sql &= "'" & dia & "',"
+                        Sql &= "'" & hora & "',"
+                        Sql &= "'" & sintoma & "',"
+                        Sql &= "'" & ci & "');"
+                        command.CommandText = Sql
                         command.CommandType = CommandType.Text
                         Dim reader = command.ExecuteReader()
                         If reader.HasRows Then
